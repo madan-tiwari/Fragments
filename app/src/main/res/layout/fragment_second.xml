@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="400dp"
-    android:background="@color/colorAccent"
+    android:orientation="vertical"
     tools:context=".fragments.SecondFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Welcome To Fragment Two"
+        android:layout_height="wrap_content"
+        android:id="@+id/etRadius"
         android:gravity="center"
+        android:layout_margin="10dp"
+        android:hint="Enter Radius"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAreaofCircle"
+        android:text="Area Of Circle"
+        android:layout_margin="10dp"
         />
 
-</FrameLayout>
+</LinearLayout>
